@@ -20,7 +20,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.linuxprobe.com/wp-content/uploads/2016/02/docker.png">
 <meta property="article:published_time" content="2023-02-01T09:22:03.472Z">
-<meta property="article:modified_time" content="2023-02-01T10:12:09.333Z">
+<meta property="article:modified_time" content="2023-02-02T02:19:32.244Z">
 <meta property="article:author" content="John Fish">
 <meta property="article:tag" content="openwrt">
 <meta property="article:tag" content="docker">
@@ -67,32 +67,10 @@
 
 
   
-  
-  <div class="site-header-image">
-    <img id="originBg" width="100%" alt="Hike News" src="">
-  </div>
-
-  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
-    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
-  </div>
-
-  <script>
-        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
-        var random = Math.floor((Math.random() * imgUrls.length ));
-        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-          document.getElementById("originBg").src=imgUrls[random];
-          document.getElementById("blurBg").src=imgUrls[random];
-        } else {
-          document.getElementById("originBg").src='/' + imgUrls[random];
-          document.getElementById("blurBg").src='/' + imgUrls[random];
-        }
-    </script>
-
-
 
 
 <header id="allheader" class="site-header" role="banner" 
-   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+   >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -143,7 +121,7 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" target="_blank" href="https://www.linuxprobe.com/wp-content/uploads/2016/02/docker.png" rel="gallery_cldlrs90e000504v6gmr6bmw7 noopener">
+      <a class="article-gallery-img fancybox" target="_blank" href="https://www.linuxprobe.com/wp-content/uploads/2016/02/docker.png" rel="gallery_cldmh37wd000gycv621uwhvbx noopener">
         <img src="https://www.linuxprobe.com/wp-content/uploads/2016/02/docker.png" itemprop="image">
       </a>
     
@@ -177,9 +155,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>前些天发现家里的软路由R2S里面openwrt系统里面预装了一个docker，于是突发奇想：能不能用R2S里面多余的存储空间搭建一个Calibre-web用来实现家庭内部的电子书数据库？说干就干，跟着网上的资料，经过两个小时的鏖战，最后我这个完全没接触过docker的纯菜鸟终于也完成这个应用的搭建。<span id="more"></span></p>
-<h1 id="openwrt-docker-calibre-web-搭建家庭电子书库服务器"><a href="#openwrt-docker-calibre-web-搭建家庭电子书库服务器" class="headerlink" title="openwrt + docker + calibre-web : 搭建家庭电子书库服务器"></a>openwrt + docker + calibre-web : 搭建家庭电子书库服务器</h1><p><strong>Calibre-web是什么：</strong></p>
+<p><strong>Calibre-web是什么：</strong></p>
 <p>Calibre电子书管理解决方案，本地版使用了很多年，发现可以突破本地服务的局限，为自己的各种终端提供电子书服务。<br>Calibre-web就是calibre的web版，它提供了用户友好的对外网页展示的形式，可以在网上展示，管理，浏览自己的书籍，让书跟着自己走。</p>
-<p>前些天发现家里的软路由R2S里面openwrt系统里面预装了一个docker，于是突发奇想：能不能用R2S里面多余的存储空间搭建一个Calibre-web用来实现家庭内部的电子书数据库？说干就干，跟着网上的资料，经过两个小时的鏖战，最后我这个完全没接触过docker的纯菜鸟终于也完成这个应用的搭建。</p>
 <p>参考资料：</p>
 <ul>
 <li>[为openwrt里的docker扩容教程 - 腾讯云开发者社区-腾讯云 (tencent.com)](<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1956624#:~:text=OpenWrt">https://cloud.tencent.com/developer/article/1956624#:~:text=OpenWrt</a> 扩容磁盘方案及实操 我们安装,OpenWrt 之后默认的存储空间都很小，如果你是通过下载其他大佬的固件，一般磁盘大小在编译固件的时候大小就固定死了，如果要跑 docker 的话会连)</li>
@@ -402,7 +379,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#openwrt-docker-calibre-web-%E6%90%AD%E5%BB%BA%E5%AE%B6%E5%BA%AD%E7%94%B5%E5%AD%90%E4%B9%A6%E5%BA%93%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">openwrt + docker + calibre-web : 搭建家庭电子书库服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E9%9B%B6%E6%AD%A5%EF%BC%9Adocker%E7%9A%84%E6%89%A9%E5%AE%B9"><span class="nav-number">1.1.</span> <span class="nav-text">第零步：docker的扩容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E6%96%B0%E5%88%86%E5%8C%BA"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. 创建新分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B0%86%E5%88%86%E5%8C%BA%E6%8C%82%E8%BD%BD%E5%9C%A8docker%E4%B8%8B"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. 将分区挂载在docker下</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E5%AE%89%E8%A3%85calibre-web"><span class="nav-number">1.2.</span> <span class="nav-text">第一步：安装calibre-web</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E9%85%8D%E7%BD%AEcalibre-web"><span class="nav-number">1.3.</span> <span class="nav-text">第二步：配置calibre-web</span></a></li></ol></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E9%9B%B6%E6%AD%A5%EF%BC%9Adocker%E7%9A%84%E6%89%A9%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">第零步：docker的扩容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E6%96%B0%E5%88%86%E5%8C%BA"><span class="nav-number">1.1.</span> <span class="nav-text">1. 创建新分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B0%86%E5%88%86%E5%8C%BA%E6%8C%82%E8%BD%BD%E5%9C%A8docker%E4%B8%8B"><span class="nav-number">1.2.</span> <span class="nav-text">2. 将分区挂载在docker下</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E5%AE%89%E8%A3%85calibre-web"><span class="nav-number">2.</span> <span class="nav-text">第一步：安装calibre-web</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E9%85%8D%E7%BD%AEcalibre-web"><span class="nav-number">3.</span> <span class="nav-text">第二步：配置calibre-web</span></a></li></ol>
     
     </div>
   </aside>
@@ -455,9 +432,6 @@
 
 
     <!-- headerblur min height -->
-    
-      var headerblur = document.getElementById("header-blur");
-      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>
